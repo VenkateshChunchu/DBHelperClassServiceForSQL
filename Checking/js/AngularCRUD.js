@@ -1,6 +1,6 @@
 ﻿/// <reference path="angular.min.js" />
 var myApp = angular.module("CRUDModule", []).controller("crudController", function ($scope, $http, $log) {
-    $scope.message = "Hi .....";
+    $scope.message = "Hi ....";
     $http(
         {
             method: 'POST',    
