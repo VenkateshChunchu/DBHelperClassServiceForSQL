@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="CRUDModule">
+<head>
+    <title>AngularCRUDApplication</title>
+    <script src="js/angular.min.js"></script>
+    <script src="js/AngularCRUD.js"></script>
+</head>
+<body ng-controller="crudController">
+    Products List
+    {{message}}
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Cost</th>
+        </tr>
+        <tr ng-repeat="product in productsList">
+            <td><input type="text" name="name" value=" " ng-model="product.id" readonly/></td>
+            <td><input type="text" name="name" value=" " ng-model="product.image_url" readonly /></td>
+            <td><input type="text" name="name" value=" " ng-model="product.description" readonly /></td>
+            <td><input type="text" name="name" value=" " ng-model="product.title" readonly /></td>
+            <td>{{product.cost}}</td>
+            <td>
+                <a href="#" ng-click="EditItem(product.id)">Edit Item</a>
+                <a href="#" ng-click="DeleteItem(product.id)">Delete Item</a>
+            </td>
+            <td><button id="btnEdit" ng-click="EditItem(product.id)">Edit</button></td>&nbsp;&nbsp;
+            <td><button id="btnDelete" ng-click="DeleteItem(product.id)">Delete</button></td>
+        </tr>
+    </table>
+
+    <p>Edit the Product</p>
+    <table border="1">
+        <tr>
+            <td>ID</td>
+            <td><input type="text" name="name" value=" " ng-model="id" /></td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="name" value=" " ng-model="name" /></td>
+        </tr>
+        <tr>
+            <td>Quantity</td>
+            <td><input type="text" name="name" value=" " ng-model="quantity" /></td>
+        </tr>
+        <tr>
+            <td>Cost</td>
+            <td><input type="text" name="name" value=" " ng-model="cost" /></td>
+        </tr>
+        <tr><td ><button id="btnSave" ng-click="AddItem()">Save</button></td>&nbsp;&nbsp;
+            <td ><button id="btnClear" onclick="ClearFields()">Clear</button></td></tr>
+    </table>
+</body>
+</html>

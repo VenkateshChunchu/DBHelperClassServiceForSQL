@@ -1,0 +1,6 @@
+C:\Users\meena\Desktop\PracticeWCFServices\RestAPI Service Application\NewsArticleService\Checking\bin\Checking.dll.config
+C:\Users\meena\Desktop\PracticeWCFServices\RestAPI Service Application\NewsArticleService\Checking\bin\Checking.dll
+C:\Users\meena\Desktop\PracticeWCFServices\RestAPI Service Application\NewsArticleService\Checking\bin\Checking.pdb
+C:\Users\meena\Desktop\PracticeWCFServices\RestAPI Service Application\NewsArticleService\Checking\obj\Debug\Checking.dll
+C:\Users\meena\Desktop\PracticeWCFServices\RestAPI Service Application\NewsArticleService\Checking\obj\Debug\Checking.pdb
+C:\Users\meena\Desktop\PracticeWCFServices\RestAPI Service Application\NewsArticleService\Checking\obj\Debug\Checking.csprojResolveAssemblyReference.cache

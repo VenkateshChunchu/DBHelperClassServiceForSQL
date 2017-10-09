@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="myModule">
+<head>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <div ng-controller="MyController">
+        Select
+        <select ng-model="hello" ng-options="m.model for m in cars"></select>
+        <br /> <br />
+        hi {{msg}}<br />
+        using x,y<select ng-model="hell" ng-options="x.model for (x,y) in cars"></select>
+        <p>Cost is : {{hello.cost}}</p>
+        <br /> <br />
+        using ng repeat
+        <select>
+            <option ng-model="he" ng-repeat="x in cars" value="{{x.cost}}">{{x.model}}</option>
+        </select>
+        <br />
+        <h1>{{he.cost}}</h1>
+        Some text<input type="text" name="name" value=" " placeholder="enter something" required /><br />
+        Email:
+        <input type="email" name="name" value=" " placeholder="Enter the Email" required />
+        <br /><br /><br />
+
+        <table>
+            <tr ng-repeat="x in cars">
+                <td>{{x.model}}</td>
+                <td>{{x.cost}}</td>
+                <td>{{x.country}}</td>
+            </tr>
+        </table>
+
+    </div>
+    <div>
+        {{AllArticles}}
+    </div>
+
+
+</body>
+</html>
